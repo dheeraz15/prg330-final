@@ -1,0 +1,47 @@
+
+============================================================
+TMDB MOVIES ANALYSIS REPORT (local dump of live API)
+============================================================
+Movies (stored rows)      : 2313
+Complete (budget+rev+run)  : 1843
+Total Revenue              : USD 417758548972
+Total Budget               : USD 119145879267
+Profitable (rev>=2x budget): 1309
+Top Revenue Genre          : Action
+Top Count Genre            : Drama
+Top Language               : en
+============================================================
+CORRELATIONS (numpy Pearson r)
+============================================================
+Budget vs Revenue: 0.695
+Vote_Count vs Revenue: 0.645
+Rating vs Revenue: 0.178
+Popularity vs Revenue: 0.252
+Cast_Count vs Rating: 0.21
+Crew_Count vs Rating: 0.158
+Budget vs Rating: 0.082
+============================================================
+REVENUE BY GENRE
+============================================================
+Action                : USD 102,465,036,642  ( 24.5%)
+Adventure             : USD  79,216,960,823  ( 19.0%)
+Animation             : USD  45,654,827,955  ( 10.9%)
+Drama                 : USD  34,229,783,657  (  8.2%)
+Comedy                : USD  33,530,440,143  (  8.0%)
+Science Fiction       : USD  30,545,462,408  (  7.3%)
+Horror                : USD  20,569,136,535  (  4.9%)
+Fantasy               : USD  18,221,542,590  (  4.4%)
+Family                : USD  17,318,764,539  (  4.1%)
+Thriller              : USD  10,019,628,243  (  2.4%)
+Crime                 : USD   9,819,767,703  (  2.4%)
+Romance               : USD   4,889,722,883  (  1.2%)
+Mystery               : USD   3,704,504,184  (  0.9%)
+War                   : USD   3,228,719,867  (  0.8%)
+Music                 : USD   1,775,861,708  (  0.4%)
+History               : USD   1,576,528,961  (  0.4%)
+Western               : USD     991,860,131  (  0.2%)
+Unknown               : USD               0  (  0.0%)
+Documentary           : USD               0  (  0.0%)
+============================================================
+CONCLUSIVE FINDING: production scale drives commercial outcome — Budget vs Revenue r=0.7 is the strongest revenue link, above Rating vs Revenue (r=0.18) and Popularity vs Revenue (r=0.25). Cast size (r=0.21) and crew size (r=0.16) barely move ratings, and budget barely lifts ratings (r=0.08). In short: money predicts money; quality signals don't.
+============================================================
